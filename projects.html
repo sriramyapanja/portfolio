@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sri Ramya Panja - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Sri Ramya Panja</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Protocol</a></li>
+                <li><a href="about.html">Phase I</a></li>
+                <li><a href="skills-experience.html">Phase II</a></li>
+                <li><a href="education.html">Phase III</a></li>
+                <li><a href="projects.html" class="active">Phase IV</a></li>
+                <li><a href="blog.html">Research Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <div class="page-header fade-in">
+            <h1 class="page-title">Phase IV: Post-Marketing Surveillance</h1>
+            <p class="page-subtitle">Clinical outcomes and case studies</p>
+        </div>
+
+        <section class="content-section">
+            <div class="projects-grid">
+                <div class="project-card slide-up">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600;">FHIR ETL</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>OpenEMR → Primary Care EHR: FHIR ETL Pipeline</h3>
+                        <p class="project-description">Engineered an end-to-end ETL system migrating Patient, Condition, Observation, and Procedure resources from OpenEMR FHIR APIs, enforcing FHIR R4 compliance and referential integrity. Secured ingestion with bearer authentication and implemented idempotent upserts with structured error logging and retries.</p>
+                        <ul class="project-highlights" style="list-style: none; padding-left: 0; margin: 1rem 0;">
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Normalized and enriched clinical data via SNOMED CT for concept resolution</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Standardized coding and applied validated defaults to reduce manual entry</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Developed with version control and documentation for reproducibility</li>
+                        </ul>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FHIR R4</span>
+                            <span class="tech-tag">SNOMED CT</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">PyCharm</span>
+                            <span class="tech-tag">Git/GitHub</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sriramyapanja" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card slide-up">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #10b981, #059669); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600;">ER Analytics</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Emergency Room Visit Analysis</h3>
+                        <p class="project-description">Built an ETL pipeline from OpenEMR clinical exports into a normalized MySQL schema with primary/foreign key constraints. Engineered data cleaning and validation workflows to improve data integrity and interoperability, integrating OpenEMR fields for downstream analytics.</p>
+                        <ul class="project-highlights" style="list-style: none; padding-left: 0; margin: 1rem 0;">
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Developed fully rerunnable Jupyter analysis workflow combining SQL and Pandas</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Generated interactive visualizations for stakeholder communication</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Delivered key insights: 97% follow-up prescriptions, utilization patterns by demographics</li>
+                        </ul>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Jupyter</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">OpenEMR</span>
+                            <span class="tech-tag">Power BI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sriramyapanja" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card slide-up">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600;">ML Research</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Assessing Risk Factors for Parkinson's Disease</h3>
+                        <p class="project-description">Built an end-to-end R workflow to investigate how clinical, cognitive, and lifestyle factors relate to Parkinson's diagnosis using a public dataset. Preprocessed and profiled data, conducted statistical testing, and trained logistic regression and cluster-based models.</p>
+                        <ul class="project-highlights" style="list-style: none; padding-left: 0; margin: 1rem 0;">
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Engineered features and visualized key patterns</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Achieved strong predictive performance with rigorous evaluation</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Identified most informative factor clusters with actionable insights</li>
+                        </ul>
+                        <div class="project-technologies">
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">Statistical Modeling</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sriramyapanja" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card slide-up">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600;">Stroke Risk ML</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Stroke Risk Assessment with Machine Learning</h3>
+                        <p class="project-description">Prepared and cleaned a 40,000-row clinical dataset using SQL, standardizing key variables for stroke risk modeling. Developed and compared ML models in Python, identifying top predictors and achieving 98% accuracy for targeted risk assessment.</p>
+                        <ul class="project-highlights" style="list-style: none; padding-left: 0; margin: 1rem 0;">
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Identified top predictors including hypertension and BMI</li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative; color: var(--text-secondary);"><span style="position: absolute; left: 0; color: var(--primary-color);">▸</span> Achieved 98% accuracy for targeted risk assessment</li>
+                        </ul>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Data Cleaning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sriramyapanja" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,161 @@
+{
+  "personalInfo": {
+    "name": "Sri Ramya Panja",
+    "title": "Health Informatics Graduate & Licensed Dental Professional",
+    "email": "sriramyapanja123@gmail.com",
+    "phone": "(551) 260-2365",
+    "location": "Indianapolis, Indiana",
+    "website": "",
+    "linkedin": "https://www.linkedin.com/in/sriramyapanja/",
+    "github": "https://github.com/sriramyapanja"
+  },
+  "summary": "Health Informatics graduate and licensed dental professional with hands-on experience in clinical workflows, radiology, and public health research. Skilled in managing electronic medical records, coordinating patient referrals across dental departments, and analyzing population-based data in public health projects. Experienced in data collection, cleaning, and analysis using SQL, Python, and R, with working knowledge of Excel, Power BI, and REDCap. Integrates clinical insight with informatics skills to support research on health information exchange, workflow optimization, and quality improvement in healthcare delivery.",
+  "experience": [
+    {
+      "title": "Clinical Data Analyst Intern",
+      "company": "GTech Technologies Pty Ltd",
+      "department": "Health Informatics Innovation Division",
+      "location": "Denham Court, New South Wales, Australia (Remote)",
+      "startDate": "August 2025",
+      "endDate": "December 2025",
+      "current": true,
+      "description": [
+        "Led full-stack development of an AI-integrated Electronic Medical Record (EMR) system using React.js, Node.js, and MySQL to enhance clinical decision support and workflow automation",
+        "Engineered and normalized relational database schema and optimized SQL operations in DBeaver, improving data reliability and query performance across patient records",
+        "Developed dynamic front-end modules for patient registration, diagnostics, and treatment management, streamlining data entry and reducing documentation errors"
+      ]
+    },
+    {
+      "title": "Research Assistant",
+      "company": "Luddy School of Informatics and Computing, Indiana University",
+      "department": "",
+      "location": "Indianapolis, Indiana",
+      "startDate": "August 2024",
+      "endDate": "December 2024",
+      "current": false,
+      "description": [
+        "Managed REDCap data collection and behavioral health research datasets; supported research informatics systems including OpenClinica",
+        "Performed data cleaning, SQL queries, and statistical analysis in Python and R; documented methods using GitHub and BookStack platforms",
+        "Ensured HIPAA and IRB compliance and implemented FAIR data management standards for multi-source research data",
+        "Collaborated with informatics faculty and analysts to optimize data collection, integration, and reporting processes"
+      ]
+    },
+    {
+      "title": "Junior Dentist / Clinical Coordinator",
+      "company": "Private Dental Practice",
+      "department": "",
+      "location": "Andhra Pradesh, India",
+      "startDate": "August 2021",
+      "endDate": "November 2023",
+      "current": false,
+      "description": [
+        "Maintained accurate EMR documentation using OpenEMR and Epic and standardized clinical records for over 1,000 patients",
+        "Led public health data collection initiatives and performed population-level analysis that informed quality improvement and research efforts",
+        "Enhanced clinical workflow coordination and data continuity across departments through process mapping and validation checklists"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Masters in Health Informatics",
+      "institution": "Indiana University",
+      "location": "Indianapolis, Indiana",
+      "startDate": "January 2024",
+      "endDate": "December 2025",
+      "gpa": "",
+      "honors": []
+    },
+    {
+      "degree": "Bachelors of Dental Surgery",
+      "institution": "Drs. Sudha & Nageswara Rao Siddhartha Institute of Dental Sciences",
+      "location": "Allapuram, India",
+      "startDate": "August 2017",
+      "endDate": "June 2023",
+      "gpa": "",
+      "honors": []
+    }
+  ],
+  "skills": {
+    "frontend": ["HTML5", "CSS3", "JavaScript", "React.js"],
+    "backend": ["Node.js", "Express.js", "REST APIs", "MERN Stack"],
+    "databases": ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
+    "machineLearning": ["Scikit-learn", "TensorFlow", "Pandas", "NumPy"],
+    "dataAnalysis": ["Python", "R", "SQL", "Statistical Analysis"],
+    "dataVisualization": ["Power BI", "Tableau", "Excel", "R Shiny"],
+    "healthcare": ["FHIR R4", "HL7", "REDCap", "OpenEMR", "OpenClinica", "Health Information Exchange"],
+    "dataIntegration": ["ETL Pipelines", "Data Validation", "Quality Assurance"],
+    "tools": ["GitHub", "Jupyter", "DBeaver", "ETL Pipelines"],
+    "fullStack": ["MERN Stack", "Frontend Development", "Backend Development", "API Development", "UI/UX Design", "Responsive Design"],
+    "dataScience": ["Machine Learning", "Predictive Modeling", "Statistical Analysis", "Data Mining", "Feature Engineering", "Model Evaluation"],
+    "compliance": ["HIPAA", "IRB Protocols", "FAIR Data Principles"],
+    "professional": ["Critical Thinking", "Adaptability", "Organization", "Communication", "Attention to Detail", "Continuous Learning"]
+  },
+  "projects": [
+    {
+      "name": "OpenEMR → Primary Care EHR: FHIR ETL Pipeline",
+      "description": "Engineered an end-to-end ETL migrating Patient, Condition, Observation, and Procedure resources from OpenEMR FHIR APIs, enforcing FHIR R4 compliance and referential integrity. Secured ingestion with bearer authentication; added request/response validation and idempotent upserts with structured error logging and retries. Normalized and enriched clinical data via SNOMED CT for concept resolution and bodySite mapping.",
+      "technologies": ["Python", "FHIR R4", "SNOMED CT", "REST APIs", "PyCharm", "Git/GitHub"],
+      "url": "",
+      "github": "https://github.com/sriramyapanja"
+    },
+    {
+      "name": "Emergency Room Visit Analysis",
+      "description": "Built an ETL pipeline from OpenEMR clinical exports into a normalized MySQL schema enforcing primary/foreign key constraints. Engineered data cleaning and validation workflows to improve data integrity. Developed a fully rerunnable Jupyter analysis workflow combining SQL and Pandas joins to support population-level emergency-visit analytics.",
+      "technologies": ["Python", "MySQL", "Pandas", "Jupyter", "SQL", "OpenEMR", "Power BI"],
+      "url": "",
+      "github": "https://github.com/sriramyapanja"
+    },
+    {
+      "name": "Assessing Risk Factors for Parkinson's Disease",
+      "description": "Built an end-to-end R workflow to investigate how clinical, cognitive, and lifestyle factors relate to Parkinson's diagnosis. Preprocessed and profiled data; conducted statistical testing and correlations; engineered features and visualized key patterns. Trained logistic regression and cluster-based models with rigorous evaluation.",
+      "technologies": ["R", "Statistical Modeling", "Machine Learning"],
+      "url": "",
+      "github": "https://github.com/sriramyapanja"
+    },
+    {
+      "name": "Stroke Risk Assessment with Machine Learning",
+      "description": "Prepared and cleaned a 40,000-row clinical dataset using SQL, standardizing key variables for stroke risk modeling. Developed and compared ML models in Python, identifying top predictors like hypertension and BMI, achieving 98% accuracy for targeted risk assessment.",
+      "technologies": ["Python", "SQL", "Machine Learning"],
+      "url": "",
+      "github": "https://github.com/sriramyapanja"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Harnessing the Power of Data with Power BI",
+      "issuingOrganization": "Microsoft",
+      "date": "October 2025",
+      "expiryDate": "",
+      "credentialId": ""
+    },
+    {
+      "name": "Preparing Data for Analysis with Microsoft Excel",
+      "issuingOrganization": "Microsoft",
+      "date": "September 2025",
+      "expiryDate": "",
+      "credentialId": ""
+    },
+    {
+      "name": "SQL Essential Training 2019",
+      "issuingOrganization": "LinkedIn Learning",
+      "date": "Completed",
+      "expiryDate": "",
+      "credentialId": ""
+    },
+    {
+      "name": "Provisional Dental Radiology Training",
+      "issuingOrganization": "American Dental Assistants Association (ADAA)",
+      "date": "Completed",
+      "expiryDate": "",
+      "credentialId": ""
+    }
+  ],
+  "memberships": [
+    {
+      "organization": "American Medical Informatics Association (AMIA)",
+      "type": "Student Member",
+      "status": "Active"
+    }
+  ],
+  "achievements": []
+}

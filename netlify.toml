@@ -1,0 +1,22 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/resume"
+  to = "/assets/documents/Master_resume_1.pdf"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/assets/documents/*.pdf"
+  [headers.values]
+    Content-Disposition = "attachment"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+
