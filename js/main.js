@@ -83,21 +83,42 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Enhanced resume download functionality with fallback
+// Enhanced resume download functionality with syringe animation
 document.addEventListener('DOMContentLoaded', function() {
     const downloadButtons = document.querySelectorAll('.download-resume-btn');
     
     downloadButtons.forEach(button => {
         button.addEventListener('click', function(e) {
+            // Add downloading class for animation
+            this.classList.add('downloading');
+            
+            // Remove downloading class after animation completes
+            setTimeout(() => {
+                this.classList.remove('downloading');
+            }, 2000);
+            
             // Check if browser supports download attribute
             if (this.hasAttribute('download')) {
-                return; // Let browser handle download
+                // Let browser handle download, but add visual feedback
+                return;
             }
             
             // Fallback: Open in new tab if download attribute not supported
             e.preventDefault();
             const resumeUrl = this.getAttribute('href');
             window.open(resumeUrl, '_blank');
+            
+            // Remove downloading class after opening
+            setTimeout(() => {
+                this.classList.remove('downloading');
+            }, 1500);
+        });
+        
+        // Add hover effect for syringe pull animation
+        button.addEventListener('mouseenter', function() {
+            if (!this.classList.contains('downloading')) {
+                // Animation handled by CSS
+            }
         });
     });
 });

@@ -1009,55 +1009,135 @@ nav {
     box-shadow: 0 4px 12px rgba(0, 172, 193, 0.3);
 }
 
-/* Download Resume Button - Pill Shape */
+/* Download Resume Button - Sophisticated Syringe Animation */
 .download-resume-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
-    background: var(--clinical-blue);
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--clinical-blue) 0%, var(--medical-cyan) 100%);
     color: white;
-    padding: 1rem 2.5rem;
-    border: 2px solid var(--clinical-blue);
+    padding: 1.2rem 3rem;
+    border: 3px solid var(--clinical-blue);
     border-radius: 50px; /* Pill shape */
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin-top: 1rem;
-    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     position: relative;
     overflow: hidden;
+    min-width: 220px;
 }
 
+/* Syringe Icon Container */
+.download-resume-btn::before {
+    content: '💉';
+    font-size: 1.5rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+/* Blood Collection Animation */
 .download-resume-btn::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    transform: translate(-50%, -50%);
-    transition: width 0.6s ease, height 0.6s ease;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(220, 20, 60, 0.3) 20%, 
+        rgba(220, 20, 60, 0.5) 50%, 
+        rgba(220, 20, 60, 0.3) 80%, 
+        transparent 100%);
+    transition: left 1s ease;
+    z-index: 1;
 }
 
+/* Hover State - Syringe Pulls */
 .download-resume-btn:hover {
-    background: var(--medical-cyan);
+    background: linear-gradient(135deg, var(--medical-cyan) 0%, var(--clinical-blue) 100%);
     border-color: var(--medical-cyan);
     color: white;
     transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 172, 193, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 172, 193, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.download-resume-btn:hover::after {
-    width: 300px;
-    height: 300px;
+.download-resume-btn:hover::before {
+    transform: translateX(-5px) scale(1.1);
+    animation: syringePull 1s ease-in-out infinite;
 }
 
-.download-resume-btn::before {
-    content: '💊';
-    font-size: 1.2rem;
+/* Active State - Blood Collection */
+.download-resume-btn:active {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.download-resume-btn:active::after {
+    left: 100%;
+}
+
+/* Syringe Pull Animation */
+@keyframes syringePull {
+    0%, 100% {
+        transform: translateX(-5px) scale(1.1);
+    }
+    50% {
+        transform: translateX(-12px) scale(1.15);
+    }
+}
+
+/* Loading State for Download */
+.download-resume-btn.downloading::before {
+    animation: syringeCollect 1.5s ease-in-out infinite;
+}
+
+.download-resume-btn.downloading::after {
+    left: 100%;
+    animation: bloodFlow 1.5s ease-in-out infinite;
+}
+
+@keyframes syringeCollect {
+    0% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(-15px) scale(1.2);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+@keyframes bloodFlow {
+    0% {
+        left: -100%;
+        opacity: 0.5;
+    }
+    50% {
+        left: 0%;
+        opacity: 0.8;
+    }
+    100% {
+        left: 100%;
+        opacity: 0.5;
+    }
+}
+
+/* Text with subtle animation */
+.download-resume-btn .btn-text {
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.5px;
+}
+
+.download-resume-btn:hover .btn-text {
+    letter-spacing: 1px;
 }
 
 .download-resume-btn-small {
