@@ -1,84 +1,121 @@
-# Portfolio
+# Clinical Trial Themed Portfolio - Sri Ramya Panja
 
-A modern, minimalist personal portfolio website showcasing professional experience, projects, education, and achievements.
+A modern, clinical trial-inspired portfolio website showcasing professional experience, skills, education, and projects in a pharmaceutical/clinical research aesthetic.
 
-## Project Structure
+## 🎨 Design Features
+
+- **Clinical Trial Theme**: Designed with pharmaceutical industry aesthetics
+- **Pill-shaped Navigation**: Clinical trial phase-based navigation (Phase I, II, III, IV)
+- **Professional Color Scheme**: Clinical blues, medical cyans, and sterile whites
+- **Interactive Elements**: Smooth animations, hover effects, and responsive design
+- **Medical Icons**: Lab coats, test tubes, pills, and clinical imagery throughout
+
+## 📁 Project Structure
 
 ```
 portfolio/
-├── README.md
-├── index.html              # Home page with resume
-├── about.html              # About page
-├── skills-experience.html   # Skills & Experience page
-├── education.html            # Education page
-├── projects.html            # Projects showcase
-├── blog.html               # Blog page (coming soon)
+├── index.html              # Home page (Protocol)
+├── about.html              # Phase I: Background & Eligibility
+├── skills-experience.html  # Phase II: Dosage & Methodology
+├── education.html          # Phase III: Efficacy & Validation
+├── projects.html           # Phase IV: Post-Marketing Surveillance
+├── blog.html               # Research Notes
 ├── css/
-│   └── style.css          # Minimalist modern styling with animations
+│   └── style.css          # Clinical trial themed styling
 ├── js/
-│   └── main.js            # Interactive features and animations
+│   ├── main.js            # Interactive features
+│   └── skills-interactive.js  # Skills animations
 ├── assets/
 │   ├── images/            # Portfolio images
-│   └── documents/         # Resume PDFs and documents
+│   └── documents/         # Resume PDF
 └── data/
     └── resume.json        # Resume data structure
 ```
 
-## Features
+## 🚀 GitHub Pages Hosting
 
-- **Multi-page Structure**: Separate pages for better organization
-- **Minimalist Design**: Clean, modern, and visually appealing UI
-- **Smooth Animations**: Fade-in and slide-up effects for engaging user experience
-- **Responsive Layout**: Works beautifully on desktop, tablet, and mobile devices
-- **Resume Display**: Professional resume layout on the home page
-- **Blog Placeholder**: Coming soon page for future blog content
+### Option 1: Quick Setup (Recommended)
 
-## Pages
+1. **Create a GitHub Repository:**
+   - Go to [GitHub](https://github.com) and sign in
+   - Click the "+" icon → "New repository"
+   - Name it: `portfolio` or `sriramyapanja.github.io`
+   - Choose **Public** (required for free GitHub Pages)
+   - **DO NOT** initialize with README, .gitignore, or license
+   - Click "Create repository"
 
-1. **Home** (`index.html`) - Features hero section and complete resume display
-2. **About** (`about.html`) - Personal story, values, and background
-3. **Skills & Experience** (`skills-experience.html`) - Professional skills and work history
-4. **Education** (`education.html`) - Academic background and certifications
-5. **Projects** (`projects.html`) - Portfolio of projects and accomplishments
-6. **Blog** (`blog.html`) - Coming soon page with engaging placeholder content
-
-## Setup
-
-1. Open `index.html` in a web browser to view the portfolio
-2. For local development, you can use a simple HTTP server:
+2. **Push Your Code to GitHub:**
    ```bash
-   python -m http.server 8000
+   cd /Users/sriramyapanja/PycharmProjects/PythonProject4
+   
+   # Add your GitHub repository as remote (replace YOUR_USERNAME)
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   
+   # Push to GitHub
+   git branch -M main
+   git push -u origin main
    ```
-   Then navigate to `http://localhost:8000`
 
-## Customization
+3. **Enable GitHub Pages:**
+   - Go to your repository on GitHub
+   - Click **Settings** tab
+   - Scroll down to **Pages** section (left sidebar)
+   - Under "Source", select **main** branch
+   - Click **Save**
+   - Your site will be available at: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
 
-- **Content**: Update HTML files with your personal information
-- **Styling**: Modify colors, fonts, and spacing in `css/style.css`
-- **Animations**: Customize animation effects in `js/main.js`
-- **Resume Data**: Fill in `data/resume.json` with your resume information
+### Option 2: Use Your Username Repository (Custom Domain-like)
 
-## Design Philosophy
+If you want `https://YOUR_USERNAME.github.io` (no repository name in URL):
 
-The portfolio features a minimalist design with:
-- Clean typography using Inter font
-- Subtle gradients and shadows
-- Smooth hover effects and transitions
-- Professional color scheme
-- Mobile-first responsive design
+1. Create repository named exactly: `YOUR_USERNAME.github.io` (replace YOUR_USERNAME)
+2. Push code as above
+3. Enable GitHub Pages (same steps)
+4. Site will be live at: `https://YOUR_USERNAME.github.io`
 
-## Next Steps
+## 🌐 Alternative: Netlify (Already Configured)
 
-1. Add your resume content to populate all sections
-2. Replace placeholder text with your actual information
-3. Add project images and details
-4. Customize colors and styling to match your brand
-5. Deploy to a web hosting service
+Your portfolio is already configured for Netlify hosting:
 
-## Browser Support
+- **Current Netlify URL:** https://sprightly-seahorse-5b568a.netlify.app/
+- **netlify.toml** is configured with proper headers and redirects
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+To redeploy:
+1. Drag and drop your project folder to [Netlify Drop](https://app.netlify.com/drop)
+2. Or connect your GitHub repository to Netlify for automatic deployments
 
+## 📝 Local Development
+
+```bash
+# Start local server
+python3 -m http.server 8000
+
+# Open in browser
+open http://localhost:8000
+```
+
+## 🎯 Pages Overview
+
+1. **Protocol (Home)** - Introduction and contact information
+2. **Phase I** - Background & Eligibility (About Me)
+3. **Phase II** - Dosage & Methodology (Skills & Experience)
+4. **Phase III** - Efficacy & Validation (Education & Certifications)
+5. **Phase IV** - Post-Marketing Surveillance (Projects)
+6. **Research Notes** - Blog and updates
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3 (Custom Clinical Trial Theme)
+- JavaScript (Vanilla)
+- GitHub Pages / Netlify for hosting
+
+## 📧 Contact
+
+- **LinkedIn:** [linkedin.com/in/sriramyapanja](https://www.linkedin.com/in/sriramyapanja/)
+- **GitHub:** [github.com/sriramyapanja](https://github.com/sriramyapanja)
+- **Phone:** (551) 260-2365
+
+## 📄 License
+
+© 2024 Portfolio. All rights reserved.
